@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Basic Calculator</h1>
+  <div class="main">
+    <input type="text" id="display" readonly>
+    <div class="btn-container">
+      <button class="mybtn" onclick=" val = '';   disp.value = val; ">C</button>
+      <button class="mybtn" onclick=" val = '1';   disp.value += val; ">1</button>
+      <button class="mybtn" onclick=" val = '2';   disp.value += val; ">2</button>
+      <button class="mybtn" onclick=" val = '3';   disp.value += val; ">3</button>
+      <button class="mybtn" onclick=" val = '+';   disp.value += val; ">+</button>
+      <button class="mybtn" onclick=" val = '4';   disp.value += val; ">4</button>
+      <button class="mybtn" onclick=" val = '5';   disp.value += val; ">5</button>
+      <button class="mybtn" onclick=" val = '6';   disp.value += val; ">6</button>
+      <button class="mybtn" onclick=" val = '-';   disp.value += val; ">-</button>
+      <button class="mybtn" onclick=" val = '7';   disp.value += val; ">7</button>
+      <button class="mybtn" onclick=" val = '8';   disp.value += val; ">8</button>
+      <button class="mybtn" onclick=" val = '9';   disp.value += val; ">9</button>
+      <button class="mybtn" onclick=" val = '*';   disp.value += val; ">*</button>
+      <button class="mybtn" onclick=" val = '/';   disp.value += val; ">/</button>
+      <button class="mybtn" onclick=" val = '0';   disp.value += val; ">0</button>
+      <button class="mybtn" onclick=" val = '.';   disp.value += val; ">.</button>
+      <button class="mybtn" onclick=" val = '**';   disp.value += val; ">**</button>
+      <button class="mybtn" onclick=" 
+     let str = disp.value;
+    
+     val = str.substring(0,str.length-1);
+      disp.value = val; ">x</button>
+      <button class="mybtn" onclick=" val = eval(disp.value);   
+      disp.value = val; ">=</button>
+    </div>
+  </div>
+  <script>
+    let disp = document.getElementById('display');
+    let val = '';
+    disp.value = val;
+  </script>
+
+</body>
+
+</html>
